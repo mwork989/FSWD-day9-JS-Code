@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+  </head>
+  <body>
+    <script>
+      // for loop
+
+      for (let i = 0; i < 100000; i++) {
+        console.log("forloop", i); //output -01234
+      }
+
+      // while loop
+
+      let j = 0;
+      while (j < 6) {
+        console.log("while loop", j);
+        j++;
+      } // output - 02345
+
+      // do while loop
+
+      let h = 10;
+      do {
+        // code to be executed in each iteration
+        console.log("dowhile loop", h);
+        h++;
+      } while (h < 10); // 10
+
+      const emp = {
+        name: "david",
+        age: 32,
+        designation: "software engineer",
+      };
+      console.log(emp);
+      for (let properties in emp) {
+        console.log("emp obj key", properties);
+      }
+
+      const arr = [1, 2, 3];
+      for (let value of arr) {
+        console.log("for of array",value);
+      }
+
+      for (let value of Object.keys(emp)) {
+        console.log("for of object properties",value);
+      }
+    </script>
+  </body>
+</html>
